@@ -1,0 +1,7 @@
+{{input type="text" value=query action="query"}}
+{{#if result.Title}}
+	{{render "movie-result" result}}
+{{else}}
+	No results found :(
+{{/if}}
+{{outlet}}
