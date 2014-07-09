@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+      <a class="navbar-brand" href="#">Movie Search</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="searchNavbar">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<label for="searchQuery" class="sr-only">Search query</label>
+					{{input type="text" class="form-control" id="searchQuery" placeholder="Toy Story..." action="query" value=query}}
+				</div>
+				<button class="btn btn-default" type="submit" {{action "query"}}>Search</button>
+			</form>
+		</div>
+
+	</div>
+</nav>

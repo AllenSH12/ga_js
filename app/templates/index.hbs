@@ -1,2 +1,9 @@
-{{input type="text" value=search action="query"}}
-<button type="button" {{action "query"}}>Search</button>
+<div class="searchWrapper">
+	<form class="form-inline" role="form">
+		<div class="form-group">
+			<label for="searchQuery" class="sr-only">Search query</label>
+			{{input type="text" class="form-control" id="searchQuery" placeholder="Toy Story..." action="query" value=search}}
+		</div>
+		<button class="btn btn-default" type="submit" {{action "query"}}>Search</button>
+	</form>
+</div>

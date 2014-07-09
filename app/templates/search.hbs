@@ -1,7 +1,12 @@
-{{input type="text" value=query action="query"}}
-{{#if result.Title}}
-	{{render "movie-result" result}}
-{{else}}
-	No results found :(
-{{/if}}
-{{outlet}}
+{{partial "nav"}}
+
+<div class="container">
+		{{#if result.Title}}
+			{{render "movie-result" result}}
+		{{else}}
+			<div class="alert alert-warning alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			  No results found, please try again
+			</div>
+		{{/if}}	
+</div>
