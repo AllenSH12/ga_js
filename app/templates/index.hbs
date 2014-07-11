@@ -1,9 +1,14 @@
-<div class="searchWrapper">
-	<form class="form-inline" role="form">
-		<div class="form-group">
-			<label for="searchQuery" class="sr-only">Search query</label>
-			{{input type="text" class="form-control" id="searchQuery" placeholder="Toy Story..." action="query" value=search}}
-		</div>
-		<button class="btn btn-default" type="submit" {{action "query"}}>Search</button>
-	</form>
+<div class="container homepage">
+	<div class="homepageSearch">
+		<h1>Movie Search</h1>
+		<form class="row" role="form">
+			<div class="col-md-6 col-md-offset-2 form-group">
+				<label for="searchQuery" class="sr-only">Search query</label>
+				{{input type="text" class="form-control" id="searchQuery" placeholder="Toy Story..." action="query" value=search}}
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-default btn-block" type="submit" {{action "query"}}>Search</button>
+			</div>
+		</form>
+	</div>
 </div>

@@ -1,7 +1,7 @@
 <div class="row">
 	<img {{bind-attr src=Poster}} alt="poster" class="moviePoster col-md-2">
 	<div class="movieInfo col-md-9">
-		<h3 class="movieRating"> {{imdbRating}}</h3>
+		<h3 class="movieRating">{{imdbRating}}</h3>
 		<h3 class="movieTitle">{{#link-to 'movies.detail' model}}{{Title}}{{/link-to}}</h3>
 		<h4 class="movieSubtitle">{{Plot}}</h4>
 	</div>

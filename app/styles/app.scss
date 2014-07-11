@@ -1,8 +1,26 @@
-.searchWrapper {
-	margin: 0 auto;
-	width: 50%;
-}
-
 .movieRating {
 	float: right;
+}
+
+.homepageSearch {
+	margin-top: 10%;
+	h1 {
+		text-align: center;
+		margin-bottom: 2em;
+		color: #2C3E50;
+	}
+}
+
+.movieSubtitle {
+	margin-right: 60px;
+}
+
+.homepage {
+	height: 100%;
+}
+
+.movieDetail {
+	img.moviePoster {
+		box-shadow: -1px 2px 5px #999;
+	}	
 }

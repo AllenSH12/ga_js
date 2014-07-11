@@ -1,2 +1,19 @@
-<h1>anything</h1>
-{{Title}}
+<div class="container movieDetail">
+	<div class="row">
+		<h3 class="movieRating">{{imdbRating}}</h3>
+		<h1>{{Title}} <small>{{Year}}</small></h1>
+	</div>
+	<div class="row">
+		<img class="moviePoster col-md-3" {{bind-attr src=Poster}} alt="poster">
+		<div class="col-md-9 movieInformation">
+			<p>{{Plot}}</p>
+			<p>Starring:</p>
+			<ul>
+				{{#each actor in actorsArray}}
+					<li>{{actor}}</li>
+				{{/each}}	
+			</ul>
+			<p>{{Awards}}</p>
+		</div>
+	</div>
+</div>
